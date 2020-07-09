@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Task2 
+{
+    public static void main(String[] args)
+    {
+        int minutes;
+        int years;
+        int days;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter time in minutes: ");
+        minutes = input.nextInt();
+        years=minutes/525600;
+        days=minutes/1440;
+        
+        //To use %d, %f we have to use System.out.format
+        System.out.format("For %d minutes, the number of days is %d and number of years is %d",minutes,days,years);
+    
+    }
+
+}
